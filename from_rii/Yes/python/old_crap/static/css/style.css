@@ -1,0 +1,8 @@
+body {
+background-color: #000000;
+}
+.flash.success {
+    color: rgb(23, 8, 36);
+    font-size: 72;
+    background-color: #00ff00;
+}

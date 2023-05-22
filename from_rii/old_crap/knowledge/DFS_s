@@ -1,0 +1,10 @@
+f = open(file, 'r')
+n, s = map(int, f.readline().split())
+g = [set() for i in range(n)]
+
+for i in range(n):
+    s1 = list(map(int, f.readline().split()))
+    for j in range(n):
+        if s1[j] == 1:
+            g[i].add(j)
+            g[j].add(i)
