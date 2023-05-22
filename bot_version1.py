@@ -16,5 +16,5 @@ def text(message):
     else:
         bot.send_message(message.chat.id, "you're cool, wanna prrr, " + message.from_user.first_name + " ? " + "say: yes or no")
 
-
+# heh
 bot.infinity_polling()
