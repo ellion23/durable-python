@@ -37,4 +37,4 @@ class Vector:
         self.__z *= inv_length
 
     def __str__(self):
-        return f"Vector x = {self.__x}; y = {self.__y}; z = {self.__z};"
+        return f"x = {self.__x:.4f}; y = {self.__y:.4f}; z = {self.__z:.4f};"
