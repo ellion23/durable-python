@@ -4,7 +4,7 @@ def key_for_index(item, n):
     return -1
 
 
-def get_max_len(array):
+def get_max_length(array):
     max_len = 0
     for item in array:
         if len(item) > max_len:
@@ -57,7 +57,7 @@ def count_sort(array, start, end, n, max_len):
 
 
 def msd_sort(array):
-    max_len = get_max_len(array)
+    max_len = get_max_length(array)
     count_sort(array, 0, len(array) - 1, 0, max_len)
 
 
