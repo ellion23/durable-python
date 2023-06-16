@@ -24,20 +24,8 @@ def find_min_max(list_text, n):
     return [min_element, max_element]
 
 
-def insertion_sort(text_list, start, end):
-    for i in range(start + 1, end + 1):
-        paste_element = text_list[i]
-        while i > start and text_list[i - 1] > paste_element:
-            text_list[i] = text_list[i - 1]
-            i = i - 1
-        text_list[i] = paste_element
-
-
 def count_sort(text_list, start, end, n, max_len):
     if n > max_len:
-        return
-    if (end - start) < 32:
-        insertion_sort(text_list, start, end)
         return
     min_max = find_min_max(text_list[start:end + 1], n)
     if min_max[0] == min_max[1]:
