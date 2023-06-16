@@ -4,7 +4,7 @@ def key_for_index(item, n):
     return -1
 
 
-def get_max_length(array):
+def get_max_len(array):
     max_len = 0
     for item in array:
         if len(item) > max_len:
@@ -57,16 +57,17 @@ def count_sort(array, start, end, n, max_len):
 
 
 def msd_sort(array):
-    max_len = get_max_length(array)
+    max_len = get_max_len(array)
     count_sort(array, 0, len(array) - 1, 0, max_len)
 
 
 if __name__ == '__main__':
-    array = [str(i) for i in [4, 5, 1, 123, 201, 210, 211, 221, 254, 135]]
+    array = [str(i) for i in [4, 5, 1, 123, 201, 210, 211, 265, 254, 135, 65]]
     print("Unsorted array: ", end="")
     print(*array)
 
     msd_sort(array)
-
+    # 1 123 135 201 210 211 254 265 4 5 65
+    # 1 123 135 201 210 211 265 254 4 5 65
     print("Sorted array: ", end="")
     print(*array)
